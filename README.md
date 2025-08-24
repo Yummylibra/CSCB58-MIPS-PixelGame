@@ -2,7 +2,7 @@
 
 ## Overview
 This is my final project for **CSCB58: Computer Organization** at the UTSC, which is finished by myself merely within 5 days.
-The goal was to design and implement a **platform game** entirely in **MIPS assembly**, using the MARS simulator with its **Bitmap Display** and **Keyboard MMIO** tools:contentReference[oaicite:0]{index=0}.
+The goal was to design and implement a **platform game** entirely in **MIPS assembly**, using the MARS simulator with its **Bitmap Display** and **Keyboard MMIO**.
 
 The game is a single-screen platformer where the player controls a character that can:
 - Move left and right (`a`, `d` keys).
@@ -23,7 +23,7 @@ Milestones completed:
    - Player can move left, right, and jump.  
    - Gravity ensures the player falls automatically.  
    - Collision detection with enemies, fire wheel, and lava.  
-   - Hearts decrease when the player is hurt:contentReference[oaicite:3]{index=3}.
+   - Hearts decrease when the player is hurt.
 
 3. **Milestone 3**  
    - HUD with lives displayed as hearts.  
@@ -33,19 +33,19 @@ Milestones completed:
    - Green platform moves horizontally.  
    - Purple platform disappears after some time.  
    - Double jump mechanic (max two jumps in air).  
-   - Start menu (choose Start or Exit with `w`/`s`):contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}.
+   - Start menu (choose Start or Exit with `w`/`s`).
 
 ## Controls
 - **a**: Move left  
 - **d**: Move right  
 - **w**: Jump (can double jump)  
-- **s**: Menu navigation (exit)  
+- **s**, **w** and **ENTER**: Menu navigation (exit)  
 - **p**: Restart game  
 
 ## Technical Details
 - **Bitmap Display**: 64×64 units, each 8×8 pixels.  
 - **Base address**: `0x10008000`  
-- **Colour encoding**: `0x00RRGGBB` (e.g., red = `0xff0000`):contentReference[oaicite:6]{index=6}.  
+- **Colour encoding**: `0x00RRGGBB` (e.g., red = `0xff0000`).
 - **Keyboard input**: Polled from MMIO address `0xffff0000`.  
 
 ## Files
@@ -67,7 +67,7 @@ Milestones completed:
 5. Use keyboard to control the game.
 
 ## Demo
-Video demo link (private to course staff).  
+Video demo link: https://youtu.be/iA7n_hBYkiU 
 
 ---
 
